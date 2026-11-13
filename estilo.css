@@ -1,0 +1,251 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #edf1f5;
+    color: #333d4b;
+    line-height: 1.7;
+    padding: 50px 20px;
+}
+
+/* =================================
+   CONTENEDOR PRINCIPAL
+================================= */
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(135deg, #102a43, #176b87);
+    color: white;
+    padding: 55px 45px;
+    border-radius: 18px 18px 0 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* FOTO DE PERFIL */
+
+header img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* NOMBRE */
+
+header h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 750;
+}
+
+header strong {
+    display: inline-block;
+    color: #8de0e8;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* CONTACTO */
+
+header a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #8de0e8;
+    text-decoration: underline;
+}
+
+/* =================================
+   CONTENIDO PRINCIPAL
+================================= */
+
+main {
+    background: white;
+    padding: 45px 55px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+/* TÍTULOS DE SECCIÓN */
+
+h2 {
+    color: #102a43;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8de0e8;
+    position: relative;
+}
+
+/* SUBTÍTULOS */
+
+h3 {
+    color: #176b87;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* PÁRRAFOS */
+
+p {
+    font-size: 15px;
+    color: #566273;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* TEXTO DESTACADO */
+
+section strong {
+    color: #263b50;
+}
+
+section em {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* =================================
+   LISTAS
+================================= */
+
+ul,
+ol {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+li {
+    color: #566273;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+li::marker {
+    color: #176b87;
+}
+
+/* =================================
+   ENLACES
+================================= */
+
+section a {
+    color: #16829b;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #102a43;
+}
+
+/* =================================
+   LÍNEAS DIVISORIAS
+================================= */
+
+hr {
+    border: none;
+    height: 1px;
+    background: #e3eaf0;
+    margin: 30px 0;
+}
+
+/* =================================
+   PIE DE PÁGINA
+================================= */
+
+footer {
+    background: #102a43;
+    color: #dce7f0;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 0 0 18px 18px;
+}
+
+footer p {
+    color: #dce7f0;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* =================================
+   EFECTOS VISUALES
+================================= */
+
+header,
+main,
+footer {
+    transition: 0.3s ease;
+}
+
+/* =================================
+   DISEÑO RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    header {
+        padding: 35px 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header img {
+        width: 130px;
+        height: 130px;
+    }
+
+    main {
+        padding: 30px 22px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px 12px;
+    }
+}
